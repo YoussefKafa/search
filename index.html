@@ -2,11 +2,69 @@
 <html lang="en">
     <head>
         <title>Search</title>
+        <style>
+            .toTheRightTop{
+   position:absolute;
+   top:0;
+   right:0;
+   display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px 0;
+  }
+  a {
+    width: 115px;
+  height: 50px;
+  color : black;
+  font-size: 14px;
+    text-decoration: none;
+  }
+  .centerElements {
+    text-align: center;
+  }
+  .roundedSearchBox{
+    padding: 10px;
+    margin: 10px;
+    height: 20px;
+    width: 500px;
+    border:1px solid #eaeaea;
+    outline:none;
+    border-radius: 15px;
+}
+.roundedButtons{
+    padding: 10px;
+    margin: 10px;
+    height: 35px;
+    width: 150px;
+    border:1px ;
+    outline:none;
+    background-color: #ffffff3d;
+    border-radius: 5px;
+}
+input:hover{
+    border-color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9;
+}
+input:focus{
+    border-color:#4d90fe;
+}
+        </style>
     </head>
     <body>
+        <div class="toTheRightTop">
+            <a  href="imageSearch.html">Image Search</a>
+            <a  href="advancedSearch.html">Advanced Search</a>
+        </div>
+    <br/>
+    <img style="display: block; margin-left: auto; margin-right: auto;" alt="Google"  src="google.png" height="120" width="365" data-atf="1" data-frt="0">
         <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
+            <div class="centerElements">
+            <input  class="roundedSearchBox" type="text" name="q">
+            <br/>
+            <br/>
+            <input class="roundedButtons" type="submit" value="Google Search">
+            <input class="roundedButtons"  type="submit" value="I'm Feeling lucky">
+            </div>
         </form>
     </body>
 </html>
