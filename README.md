@@ -1,5 +1,3 @@
-#IMPORTANT
-Working On It !
 # search
 A simple project that demonstrates my knowledge of HTML and CSS.
 
